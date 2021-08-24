@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NobleUI Responsive Bootstrap 4 Dashboard Template</title>
+    <!-- core:css -->
+
+    <link href="~/Content/vendors/core/core.css" rel="stylesheet" />
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link href="~/Content/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <!-- end plugin css for this page -->
+    <!-- inject:css -->
+    <link href="~/Content/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
+    <link href="~/Content/vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link href="~/Content/css/demo_1/style.css" rel="stylesheet" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/Content/images/favicon.png" />
+
+    <link rel="stylesheet" href="~/Content/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+
+    <link rel="stylesheet" href="~/Content/vendors/core/core.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="~/Content/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <!-- end plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/Content/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="~/Content/vendors/flag-icon-css/css/flag-icon.min.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/Content/css/demo_1/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/Content/images/favicon.png" />
+
+    <link rel="stylesheet" href="~/Content/vendors/core/core.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="~/Content/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/jquery-tags-input/jquery.tagsinput.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/dropzone/dropzone.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/dropify/dist/dropify.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/bootstrap-colorpicker/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css">
+    <!-- end plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/Content/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="~/Content/vendors/flag-icon-css/css/flag-icon.min.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/Content/css/demo_1/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/Content/images/favicon.png" />
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="sidebar-brand">
+                    Company<span>Name</span>
+                </a>
+                <div class="sidebar-toggler not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                    <li class="nav-item nav-category">Main</li>
+                    <li class="nav-item">
+                        <a href="~/Home/Index" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category">FEATURED</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
+                            <i class="link-icon" data-feather="mail"></i>
+                            <span class="link-title">Jobs</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="emails">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/AddMainJobs" class="nav-link">Add Main Jobs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/ViewMainJobs" class="nav-link">View Main Jobs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/AddSubJobs" class="nav-link">Add Sub Jobs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/ViewSubJobs" class="nav-link">View Sub Jobs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
+                            <i class="link-icon" data-feather="unlock"></i>
+                            <span class="link-title">Category</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="authPages">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/AddCategory" class="nav-link">Add Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/ViewCategory" class="nav-link">View Categories</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#advancedUI" role="button" aria-expanded="false" aria-controls="advancedUI">
+                            <i class="link-icon" data-feather="anchor"></i>
+                            <span class="link-title">Users</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="advancedUI">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/CreateUser" class="nav-link">User Create</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/ViewUser" class="nav-link">View User</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item nav-category">STOCK</li>
+
+                    <li class="nav-item">
+                        <a href="~/Home/Alerts" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Alerts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Inventory" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Inventory</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item nav-category">SALES</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#general-pages" role="button" aria-expanded="false" aria-controls="general-pages">
+                            <i class="link-icon" data-feather="book"></i>
+                            <span class="link-title">Purchase</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="general-pages">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/PurchaseRequest" class="nav-link">Purchase Requisition</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/PurchaseMRN" class="nav-link">Purchase MRN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/PurchaseOrder" class="nav-link">Purchase order</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
+                            <i class="link-icon" data-feather="inbox"></i>
+                            <span class="link-title">Sale</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="forms">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/ComingSoon" class="nav-link">Sale#1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/ComingSoon" class="nav-link">Sale#2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+
+                    <li class="nav-item nav-category">INVOICES</li>
+                    
+
+                    <li class="nav-item">
+                        <a href="~/Home/Chart" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Chart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Consumption" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Consumption</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="~/Home/Bill" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Bill</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-category">PAYMENT</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#charts" role="button" aria-expanded="false" aria-controls="charts">
+                            <i class="link-icon" data-feather="pie-chart"></i>
+                            <span class="link-title">History</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="charts">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/PaymentVoucher" class="nav-link">Payment Voucher</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/RecievedVoucher" class="nav-link">Recieved Voucher</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/GeneralEntries" class="nav-link">General Entries</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-category">REPORTS</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#tables" role="button" aria-expanded="false" aria-controls="tables">
+                            <i class="link-icon" data-feather="layout"></i>
+                            <span class="link-title">Reports</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="tables">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a href="~/Home/VoucherReports" class="nav-link">Voucher Reports</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/AccountStatement" class="nav-link">Account Statement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Home/BalanceSheet" class="nav-link">Balance Sheet</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="~/Home/TrialBalance" class="nav-link">Trial Balance</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="~/Home/BankReports" class="nav-link">Banks Reports</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="~/Home/StockReports" class="nav-link">Stock Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- partial -->
+
+        <div class="page-wrapper">
+
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar">
+                <a href="#" class="sidebar-toggler">
+                    <i data-feather="menu"></i>
+                </a>
+                <div class="navbar-content">
+                    
+                    <ul class="navbar-nav">
+                        
+                     
+                       <li class="nav-item dropdown nav-notifications">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="bell"></i>
+                                <div class="indicator">
+                                    <div class="circle"></div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+                                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                    <p class="mb-0 font-weight-medium">6 New Notifications</p>
+                                    <a href="javascript:;" class="text-muted">Clear all</a>
+                                </div>
+                                <div class="dropdown-body">
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="user-plus"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New customer registered</p>
+                                            <p class="sub-text text-muted">2 sec ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="gift"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New Order Recieved</p>
+                                            <p class="sub-text text-muted">30 min ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Server Limit Reached!</p>
+                                            <p class="sub-text text-muted">1 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="layers"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Apps are ready for update</p>
+                                            <p class="sub-text text-muted">5 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="download"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Download completed</p>
+                                            <p class="sub-text text-muted">6 hrs ago</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:;">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-profile">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="https://via.placeholder.com/30x30" alt="profile">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                <div class="dropdown-header d-flex flex-column align-items-center">
+                                    <div class="figure mb-3">
+                                        <img src="https://via.placeholder.com/80x80" alt="">
+                                    </div>
+                                    <div class="info text-center">
+                                        <p class="name font-weight-bold mb-0">Daniyal Khan</p>
+                                        <p class="email text-muted mb-3">daniyal@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <ul class="profile-nav p-0 pt-3">
+                                        <li class="nav-item">
+                                            <a href="pages/general/profile.html" class="nav-link">
+                                                <i data-feather="user"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="edit"></i>
+                                                <span>Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="log-out"></i>
+                                                <span>Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- partial -->
+
+            @RenderBody()
+
+            @*<hr />
+                            <footer>
+                                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                            </footer>
+                        </div>
+
+                        @Scripts.Render("~/bundles/jquery")
+                        @Scripts.Render("~/bundles/bootstrap")
+                        @RenderSection("scripts", required: false)
+                </body>
+                </html>*@
+
+
+            <!-- partial:partials/_footer.html -->
+            <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <p class="text-muted text-center text-md-left">Copyright © 2021 <a href="https://www.techphoenix.epizy.com" target="_blank">TechPhoenix</a>. All rights reserved</p>
+                <p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Daniyal Khan<i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
+            </footer>
+            <!-- partial -->
+
+        </div>
+    </div>
+
+    <!-- core:js -->
+    <script src="~/Content/vendors/core/core.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="~/Content/vendors/chartjs/Chart.min.js"></script>
+    <script src="~/Content/vendors/jquery.flot/jquery.flot.js"></script>
+    <script src="~/Content/vendors/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="~/Content/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="~/Content/vendors/progressbar.js/progressbar.min.js"></script>
+    <!-- end plugin js for this page -->
+    <!-- inject:js -->
+    <script src="~/Content/vendors/feather-icons/feather.min.js"></script>
+    <script src="~/Content/js/template.js"></script>
+    <!-- endinject -->
+    <!-- custom js for this page -->
+    <script src="~/Content/js/dashboard.js"></script>
+    <script src="~/Content/js/datepicker.js"></script>
+
+
+    <script src="~/Content/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/Content/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- end plugin js for this page -->
+    <!-- inject:js -->
+    <script src="~/Content/assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="~/Content/assets/js/template.js"></script>
+    <!-- endinject -->
+    <!-- custom js for this page -->
+    <script src="~/Content/assets/js/data-table.js"></script>
+
+
+  
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="~/Content/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- end plugin js for this page -->
+    <!-- inject:js -->
+
+    
+    <!-- endinject -->
+    <!-- custom js for this page -->
+    <script src="~/Content/js/data-table.js"></script>
+    <!-- end custom js for this page -->
+
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="~/Content/vendors/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/Content/vendors/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="~/Content/vendors/inputmask/jquery.inputmask.min.js"></script>
+    <script src="~/Content/vendors/select2/select2.min.js"></script>
+    <script src="~/Content/vendors/moment/moment.min.js"></script>
+    <script src="~/Content/vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.js"></script>
+    <!-- end plugin js for this page -->
+    <!-- inject:js -->
+    <!-- custom js for this page -->
+    <script src="~/Content/js/form-validation.js"></script>
+    <script src="~/Content/js/bootstrap-maxlength.js"></script>
+</body>
+</html>
